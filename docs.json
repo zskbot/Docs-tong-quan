@@ -24,17 +24,32 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
+          "anchor": "Velclaw Docs",
+          "href": "https://docs.velclaw.ai",
           "icon": "book-open-cover"
         },
         {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
+          "anchor": "Velclaw",
+          "icon": "house",
+          "href": "https://velclaw.cfd"
         }
       ]
-    }
+    },
+    "groups": [
+      {
+        "group": "Velclaw Documentation",
+        "expanded": true,
+        "pages": [
+          "index",
+          "quickstart",
+          "workspace",
+          "agents",
+          "build-runtime",
+          "github-delivery",
+          "security"
+        ]
+      }
+    ]
   },
   "logo": {
     "light": "/images/321871232.png",

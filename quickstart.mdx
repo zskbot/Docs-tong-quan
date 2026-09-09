@@ -3,45 +3,49 @@ title: "Quickstart"
 description: "Begin with a guide on the fastest path to a successful outcome"
 ---
 
-Describe how someone begins using your product. What is the first thing they need to do? Are there any prerequisites?
+# Getting started
 
-A quickstart should take someone from zero to using your product. They'll get a quick win and a sense of what they can accomplish.
+Velclaw is a private Next.js application. The repository uses a pnpm v9 lockfile and provides the project scripts needed for local development and validation.
 
-## Prerequisites
+## Create a workspace
 
-Before you begin, you must have:
+Clone the canonical repository and install its dependencies:
 
-- Requirement one (for example, Node.js 18+, a free account, an API key)
-- Requirement two (for example, a compatible device, a compatible browser, a compatible operating system)
+```bash
+git clone https://github.com/Velclaw/Velclaw.git
+cd Velclaw
+corepack enable
+pnpm install
+pnpm dev
+```
 
-## Get started
+Open the local development server at `http://localhost:3000`.
 
-<Steps>
-  <Step title="Install">
-    Describe how to install your product or sign up.
+## Validate the project
 
-    ```bash
-    npm install your-package
-    ```
-  </Step>
-  <Step title="Configure">
-    Describe any setup or configuration needed before first use.
+Run the standard project checks before considering a change complete:
 
-    ```bash
-    your-cli init
-    ```
-  </Step>
-  <Step title="Run it">
-    Show the first thing a user does to see it working.
+```bash
+pnpm build
+pnpm lint
+pnpm type-check
+```
 
-    ```bash
-    your-cli start
-    ```
-  </Step>
-</Steps>
+The repository CI currently tests Node.js 18.x, 20.x, and 22.x.
 
-<Tip>
-  Give people a way to get help. This could be a link to a support page, a chat with a customer support agent, or a forum for your product.
+## Documentation structure
 
-  Example: Need help? Reach out to us at [support@yourcompany.com](mailto:support@yourcompany.com).
-</Tip>
+Use the sidebar to navigate the Velclaw documentation. Each area covers a distinct part of the platform and its engineering workflow.
+
+## Share a documentation link
+
+The documentation application supports hash-based routes and a static `doc` query parameter:
+
+```text
+#/workspace
+?doc=workspace&lang=en
+```
+
+<Note>
+  Documentation describes verified project behavior. Features marked preview are not guaranteed to be generally available.
+</Note>
