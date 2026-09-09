@@ -1,13 +1,16 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "theme": "linden",
+  "name": "Velclaw",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#7203c2",
+    "light": "#000000",
+    "dark": "#000000"
   },
-  "favicon": "/favicon.svg",
+  "favicon": {
+    "light": "/images/321871232.png",
+    "dark": "/images/321871232.png"
+  },
   "navigation": {
     "pages": [
       {
@@ -34,14 +37,14 @@
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/images/321871232.png",
+    "dark": "/images/321871232.png"
   },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "https://gmail.com/huynhthuong.xyz@gmail.com",
+        "label": "Admin"
       }
     ],
     "primary": {
@@ -64,9 +67,47 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/velclaw",
+      "github": "https://github.com/velclaw/velclaw",
+      "linkedin": "https://linkedin.com/company/velclaw"
     }
+  },
+  "background": {
+    "color": {
+      "light": "#000000"
+    }
+  },
+  "icons": {
+    "library": "lucide"
+  },
+  "appearance": {
+    "default": "dark"
+  },
+  "api": {
+    "params": {
+      "expanded": "all"
+    },
+    "playground": {
+      "display": "auth",
+      "credentials": true
+    },
+    "examples": {
+      "defaults": "all",
+      "prefill": true,
+      "autogenerate": true
+    },
+    "url": "full",
+    "mdx": {
+      "auth": {
+        "method": "basic"
+      },
+      "server": "https://velclaw.cfd"
+    }
+  },
+  "markdown": {
+    "schema": true
+  },
+  "seo": {
+    "indexing": "all"
   }
 }
