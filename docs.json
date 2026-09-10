@@ -12,12 +12,41 @@
     "dark": "/images/321871232.png"
   },
   "navigation": {
-    "pages": [
+    "languages": [
       {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
+        "language": "en",
+        "groups": [
+          {
+            "group": "Velclaw Documentation",
+            "expanded": true,
+            "pages": [
+              "index",
+              "quickstart",
+              "workspace",
+              "agents",
+              "build-runtime",
+              "github-delivery",
+              "security"
+            ]
+          }
+        ]
+      },
+      {
+        "language": "vi",
+        "groups": [
+          {
+            "group": "Tài liệu Velclaw",
+            "expanded": true,
+            "pages": [
+              "vi/index",
+              "vi/quickstart",
+              "vi/workspace",
+              "vi/agents",
+              "vi/build-runtime",
+              "vi/github-delivery",
+              "vi/security"
+            ]
+          }
         ]
       }
     ],
@@ -34,22 +63,7 @@
           "href": "https://velclaw.cfd"
         }
       ]
-    },
-    "groups": [
-      {
-        "group": "Velclaw Documentation",
-        "expanded": true,
-        "pages": [
-          "index",
-          "quickstart",
-          "workspace",
-          "agents",
-          "build-runtime",
-          "github-delivery",
-          "security"
-        ]
-      }
-    ]
+    }
   },
   "logo": {
     "light": "/images/321871232.png",
